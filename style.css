@@ -1,0 +1,123 @@
+:root{
+    /* Colores */
+    --azul: #0063FE;
+    --osucro: #212121;
+    --primario: #EFEDFF;
+    --secundario: #9F9ED4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 10px;
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+}
+
+/* ++Encabezado++ */
+.header{
+    background-color: var(--azul);
+    text-align: center;
+    padding: 0.1rem 0;
+    font-size: 1.8rem;
+}
+.header-title{
+    color: var(--primario);
+    padding: 0.1rem 0;
+    text-transform: uppercase;
+}
+
+.header-description{
+    color: var(--primario);
+    padding: 1rem 0;
+}
+
+/* **Respuesta** */
+.answer{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.answer p{
+    font-size: 2.5rem;
+    font-weight: bold; 
+}
+
+/* contendedor de figuras */
+.figure{
+    width: 75%;
+    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+/* Casillas o cajas */
+.box{
+    width: 35rem;
+    height: 60rem;
+    border: 3px solid var(--azul);
+    border-radius: 1rem;
+    margin: 1.5rem;
+    float: left;
+}
+
+/* **Encabezado y Main de la caja** */
+.box-header{
+    background-color: var(--azul);
+    text-align: center;
+    padding: 1.5rem 0;
+    color: var(--primario);
+    font-size: 1.6rem;
+}
+
+.box-main{
+    text-align: center;
+    padding: 1rem;
+}
+
+.box-main__text{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.box-main__input{
+    height: 4rem;
+    width: 20rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--azul);
+    border: solid var(--osucro);
+    border-radius: 0.5rem;
+}
+
+.box-main__btn{
+    background-color: var(--azul);
+    color: var(--primario);
+    width: 12rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+    border-style: none;
+    border-radius: 1rem;
+}
+
+.box-main__btn:hover{
+    background-color: var(--secundario);
+    color: var(--osucro);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.box-main__btn:active{
+    background-color: var(--secundario);
+}
