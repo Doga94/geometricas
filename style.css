@@ -56,11 +56,12 @@ body{
     margin: auto;
     padding: 1rem;
     overflow: hidden;
+    max-width: 1000px;
 }
 
 /* Casillas o cajas */
 .box{
-    width: 35rem;
+    width: 30%;
     height: 60rem;
     border: 3px solid var(--azul);
     border-radius: 1rem;
@@ -121,3 +122,55 @@ body{
 .box-main__btn:active{
     background-color: var(--secundario);
 }
+
+/* Web responsive */
+/* @media screen and (max-width: 1190px) {
+    .figure{
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+    .figure{
+        width: 100%;
+        display: block;
+    }
+    .box{
+        width: 100%;
+        margin: 1rem 0;
+        height: auto;
+    }
+    .box-main__input{
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .figure{
+        width: 100%;
+        display: block;
+    }
+    .box{
+        width: 100%;
+        margin: 1rem 0;
+        height: auto;
+    }
+    .box-main__input{
+        margin: 1rem 0;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    .figure{
+        width: 100%;
+        display: block;
+    }
+    .box{
+        width: 100%;
+        margin: 1rem 0;
+        height: auto;
+    }
+    .box-main__input{
+        margin: 1rem 0;
+    } 
+}*/
